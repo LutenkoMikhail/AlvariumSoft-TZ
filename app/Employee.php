@@ -17,6 +17,6 @@ class Employee extends Model
 
     public function department()
     {
-        return $this->hasOne(\APP\Department::class);
+        return $this->belongsTo(\App\Department::class);
     }
 }

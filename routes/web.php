@@ -14,4 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('employees', 'EmployeeController@index')->name('employee');
+Route::get('employees', 'EmployeeController@index')->name('employees');
+Route::get('employees/{department}', 'EmployeeController@allDepartmentEmployees')->name('employees.department');
+
+Route::get('department', 'DepartmentController@index')->name('departments');
