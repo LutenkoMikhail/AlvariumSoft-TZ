@@ -19,7 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('surname', 50);
             $table->date('birthday');
             $table->string('position_employee', 50);
-            $table->float('payment',10,2);
+            $table->float('payment', 10, 2);
             $table->boolean('type_payment_employee');
             $table->unsignedBigInteger('department_id');
             $table->timestamps();

@@ -12,7 +12,9 @@ class Employee extends Model
      * @var array
      */
     protected $fillable = [
-        'id','name', 'surname', 'birthday', 'position_employee', 'payment', 'type_payment_employee', 'department_id'
+        'id', 'name', 'surname', 'birthday',
+        'position_employee', 'payment',
+        'type_payment_employee', 'department_id'
     ];
 
     public function department()

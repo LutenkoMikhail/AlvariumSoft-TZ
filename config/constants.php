@@ -6,7 +6,7 @@ return [
         'paginate_employees_50' => 50,
         'paginate_employees_100' => 100,
     ],
-    'time sheet'=>[
+    'time sheet' => [
         'hours_per_month' => 176,
-]
+    ]
 ];
