@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+    @if (count($employees)!==0)
     <div class="container">
         @each('employees.button.button_paginate',$buttons,'button')
         <hr>
@@ -23,6 +23,11 @@
                 {{$employees->links()}}
             </div>
         </div>
+    @else
+            <h3 class="text-center">
+                The list of employees is empty !
+            </h3>
+    @endif
 
 @endsection
 
